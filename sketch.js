@@ -1,66 +1,56 @@
-var cnv;
-posX = 40
-posY = 50
-function centerCanvas() {
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  cnv.position(x, y);
+//Este proceso (que ahorita anda comentado) es para guardar una imagen
+let img;
+let num1 = 750;
+
+function preload() {
+  img = loadImage('assets/fotoUno.png');
 }
+
 
 function setup() {
-  cnv = createCanvas(windowWidth, windowHeight);
-  centerCanvas();
-  background(0)
-}
+  createCanvas(windowWidth, windowHeight);
+    background(255, 0, 200);
+  
 
+  frameRate(15)
+  image(img,-100, 0);
+  image(img,0, 0);
+  tint(100, 0, 40, 126)
+  image(img,70, 0);
+  tint(100, 0, 23, 126)
+  image(img,-70, 0);
+    image(img,0, -60);
+}
 function windowResized() {
-  centerCanvas();
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw(){
-  background (0);
-  textSize (20);
-  fill ( random(185), random(255), random(100) )
-  textStyle(ITALIC)
-  
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
-  text("I cant see",random (windowWidth), random(windowHeight))
+  textSize(25)
+  fill ( 234, 86, 31);
+  textStyle(ITALIC);
+  text("Ayuda",random (num1), random(num1));
+  fill ( 255, 0, 0 );
+   text("Ayuda",random (num1), random(num1));
+  fill (  209, 255, 0 );
+   text("Ayuda",random (num1), random(num1));
+     fill ( 249, 28, 95);
+   text("Ayuda",random (num1), random(num1));
+  fill ( 232, 19, 232 );
+   text("Ayuda",random (num1), random(num1));
+ fill (  209, 255, 0 );
+   text("Ayuda",random (num1), random(num1));
+    textSize (100)
+  fill (0)
+  text("Ayuda", 250, 500);
  
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-  text("I cant not hear",random (windowWidth), random(windowHeight))
-     
-    textSize (80)
-  fill (255)
-  text("Help", 700, 450)
-  
- 
-  
+  if (mouseIsPressed) { 
+    num1 = 1;
+    
+  }else {
+    num1 = 750
+  }
 }
+
+
+
