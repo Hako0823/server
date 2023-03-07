@@ -1,10 +1,15 @@
 
 let num1 = 750;
 
+
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
  
- }
+  
+
+
+}
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
