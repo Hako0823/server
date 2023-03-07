@@ -1,47 +1,67 @@
 
-let num1 = 750;
-
-
+var cnv;
+posX = 40
+posY = 50
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
- 
-  
-
-
+  cnv = createCanvas(windowWidth, windowHeight);
+  centerCanvas();
+  background(0)
 }
+
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  centerCanvas();
 }
 
 function draw(){
-  background(6);
-  textSize(25)
-  fill ( 234, 86, 31);
-  textStyle(ITALIC);
-   fill ( random(255), random(255),random(255))
-  
-  text("Help",random (num1), random(num1));
+  background (0);
+  textSize (20);
+  fill ( random(185), random(255), random(100) )
+  textStyle(ITALIC)
 
-   text("Aiuto",random (num1), random(num1));
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
+  text("I cant see",random (windowWidth), random(windowHeight))
 
-   text("помогать",random (num1), random(num1));
-  
-   text("Hilfe",random (num1), random(num1));
-  
-   text("Aide",random (num1), random(num1));
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
+  text("I cant not hear",random (windowWidth), random(windowHeight))
 
-   text("Ayuda",random (num1), random(num1));
-    
-  textSize (100)
-     fill (255)
-  text("Estoy Bien", 100, 400);
-  
- 
-  if (mouseIsPressed) { 
-    num1 = 750;
-    
-  }else {
-    num1 = 750
-  }
+    textSize (80)
+  fill (255)
+  text("Help", 700, 450)
+
+
+
 }
