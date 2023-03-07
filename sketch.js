@@ -38,7 +38,7 @@ function draw(){
     
   textSize (100)
      fill (255)
-  text("Estoy Bien", 100, 400);
+  text("Estoy Bien", windowWidth, windowHeight);
   
  
   if (mouseIsPressed) { 
