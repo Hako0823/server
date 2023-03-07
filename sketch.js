@@ -1,17 +1,20 @@
 
 let num1 = 750;
-
-
-
+var cnv;
+posX = 40
+posY = 50
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
 function setup() {
-  createCanvas(windowWidth, windowHeight);
- 
-  
-
-
+  cnv = createCanvas(windowWidth, windowHeight);
+  centerCanvas();
+  background(0)
 }
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+ centerCanvas();
 }
 
 function draw(){
@@ -21,17 +24,17 @@ function draw(){
   textStyle(ITALIC);
    fill ( random(255), random(255),random(255))
   
-  text("Help",random (num1), random(num1));
+  text("Help",random (windowWidth), random(windowHeight));
 
-   text("Aiuto",random (num1), random(num1));
+   text("Aiuto",random (windowWidth), random(windowHeight));
 
-   text("помогать",random (num1), random(num1));
+   text("помогать",random (windowWidth), random(windowHeight));
   
-   text("Hilfe",random (num1), random(num1));
+   text("Hilfe",random (windowWidth), random(windowHeight));
   
-   text("Aide",random (num1), random(num1));
+   text("Aide",random (windowWidth), random(windowHeight));
 
-   text("Ayuda",random (num1), random(num1));
+   text("Ayuda",random (windowWidth), random(windowHeight));
     
   textSize (100)
      fill (255)
