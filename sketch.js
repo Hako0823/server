@@ -37,8 +37,9 @@ function draw(){
    text("Ayuda",random (windowWidth), random(windowHeight));
     
   textSize (100)
+  textAlign(CENTER);
      fill (255)
-  text("Estoy Bien", 100, 600);
+  text("Estoy Bien");
   
  
   if (mouseIsPressed) { 
